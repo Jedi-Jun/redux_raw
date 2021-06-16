@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="board">
+        <header>
+            <button class="buttons readBtn" id="btn-r">read</button>
+            <button class="buttons writeBtn" id="btn-c">write</button>
+            <button class="buttons updateBtn" id="btn-u">update</button>
+            <button class="buttons deleteBtn" id="btn-d">delete</button>
+        </header>
+        <section>
+            <div class="writeSection hide">
+                <input type="text" id="title" name="t1" placeholder="korea"/>
+                <textarea id="description" name="t2" rows="5" cols="33"></textarea>
+                <input type="button" id="submitBtn"  value="Submit"/>
+            </div>
+            <ul class="listSection">
+            </ul>
+        </section>
+        <footer>
+            <hr>
+            designed by Jun.
+        </footer>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.min.js'></script>
+    <script src='./app.js'></script>
+</body>
+</html>

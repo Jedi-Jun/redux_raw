@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No-Redux</title>
+    <style>
+        .component-1, .component-2,  .component-3 {
+            border: 2px solid black;
+            margin: 30px auto;
+            width: 300px;
+            height: 100px;
+        }
+
+        button {
+            position: relative;
+            left: 260px;
+            top: 72px;
+        }
+    </style>
+</head>
+<body>
+    <div class="component-1">
+        <button id="fire-1" onclick="fireRed()">fire</button>
+    </div>
+    <div class="component-2" >
+        <button id="fire-2" onclick="fireGreen()">fire</button>
+    </div>
+    <div class="component-3" >
+        <button id="fire-3" onclick="fireBlue()">fire</button>
+    </div>
+    <script>
+        function fireRed() {
+            // document.querySelector('.component-1').style = "background: red"
+            changeAllColor('red');
+        }
+        function fireGreen() {
+            // document.querySelector('.component-2').style = "background: green"
+            changeAllColor('green');
+        }
+        function fireBlue() {
+            // document.querySelector('.component-3').style = "background: blue"
+            changeAllColor('blue');
+        }
+
+        function changeAllColor(color) {
+            document.querySelector('.component-2').style.background = color;
+            document.querySelector('.component-1').style.background = color;
+            document.querySelector('.component-3').style.background = color;
+        }
+    </script>
+</body>
+</html>

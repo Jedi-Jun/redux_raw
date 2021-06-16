@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With-Redux</title>
+    <style>
+        h3 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+        }
+        .component-1, .component-2,  .component-3 {
+            border: 2px solid black;
+            margin: 30px auto;
+            width: 300px;
+            height: 100px;
+        }
+        button {
+            position: absolute;
+        }
+        .components {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <h3>Redux</h3>
+    <div class="components component-1">
+        R
+        <button id="fire-1" onclick="fireRed()">fire1</button>
+    </div>
+    <div class="components component-2">
+        G
+        <button id="fire-2" onclick="fireGreen()">fire2</button>
+    </div>
+    <div class="components component-3">
+        B
+        <button id="fire-3" onclick="fireBlue()">fire3</button>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.min.js'></script>
+    <script src="./app.js"></script>
+</body>
+</html>
